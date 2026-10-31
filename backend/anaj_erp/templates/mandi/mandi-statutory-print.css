@@ -1,0 +1,166 @@
+/**
+ * APMC statutory mandi print — dot-matrix / tractor-feed friendly.
+ * Use with @media print; no browser chrome; monospace high contrast.
+ */
+
+@media print {
+  @page {
+    margin: 4mm 3mm;
+    size: auto;
+  }
+
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .no-print,
+  .mandi-print-toolbar {
+    display: none !important;
+  }
+
+  .mandi-copy-sheet {
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .mandi-copy-sheet:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+}
+
+.mandi-root {
+  color: #000;
+  background: #fff;
+  font-family: "Courier New", Courier, "Liberation Mono", monospace;
+  font-size: 11pt;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.mandi-root--80 {
+  max-width: 80ch;
+}
+
+.mandi-root--136 {
+  max-width: 136ch;
+  font-size: 10pt;
+}
+
+.mandi-copy-banner {
+  font-weight: 700;
+  text-align: center;
+  border: 2px solid #000;
+  padding: 2mm 1mm;
+  margin-bottom: 2mm;
+  text-transform: uppercase;
+}
+
+.mandi-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.15em;
+  margin: 1mm 0;
+}
+
+.mandi-title-hi {
+  text-align: center;
+  font-size: 0.95em;
+  margin-bottom: 2mm;
+}
+
+.mandi-meta {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2mm;
+}
+
+.mandi-meta td {
+  vertical-align: top;
+  padding: 1mm 2mm;
+}
+
+.mandi-grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2mm 0;
+}
+
+.mandi-grid th,
+.mandi-grid td {
+  border: 1px solid #000;
+  padding: 1mm 2mm;
+  text-align: left;
+}
+
+.mandi-grid th {
+  font-weight: 700;
+  background: #fff;
+}
+
+.mandi-grid .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.mandi-deduct {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2mm;
+}
+
+.mandi-deduct th,
+.mandi-deduct td {
+  border: 1px solid #000;
+  padding: 1mm 2mm;
+}
+
+.mandi-deduct .num {
+  text-align: right;
+}
+
+.mandi-net {
+  font-weight: 700;
+  font-size: 1.1em;
+  margin-top: 2mm;
+  border-top: 2px solid #000;
+  padding-top: 1mm;
+}
+
+.mandi-words {
+  margin-top: 2mm;
+  font-style: italic;
+}
+
+.mandi-signatures {
+  margin-top: 8mm;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mandi-signatures div {
+  width: 30%;
+  border-top: 1px solid #000;
+  text-align: center;
+  padding-top: 1mm;
+  font-size: 0.9em;
+}
+
+.mandi-rule {
+  border: none;
+  border-top: 1px dashed #000;
+  margin: 2mm 0;
+}

@@ -1,0 +1,17 @@
+---
+description: Locate ERP screens and calculations without full-repo search
+alwaysApply: true
+---
+
+Before editing UI or business logic, read `docs/architecture/CODEMAP.md` and open only the listed paths.
+
+- Account Master: `frontend/src/features/account-master/`
+- Mandi calculations: `backend/anaj_erp/calculations/mandi.py`
+- Menu/routing: `frontend/src/app/routing/`
+- Legacy entry forms: `frontend/src/features/legacy/EntryWindowImpl.tsx` only when CODEMAP says so
+
+Do not refactor unrelated modules in the same task.
+
+## Rerun ERP
+
+If the user asks to rerun/run/start the app, read [docs/cursor-rerun.md](docs/cursor-rerun.md) and run `tools/rerun_dev.ps1 -Agent` — do not explore the repo first.

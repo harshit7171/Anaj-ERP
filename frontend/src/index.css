@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", Tahoma, Arial, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, monospace;
+  --color-canvas: #f8fafc;
+  --color-surface: #f8fafc;
+  --color-surface-muted: #f1f5f9;
+  --color-text-subtle: #37687a;
+  --color-accent: #397f98;
+  --color-accent-muted: #347c96;
+  --color-accent-deep: #284f60;
+  --color-border: #477f91;
+  --color-success: #398d49;
+  --color-warning: #9a6500;
+  --color-danger: #bf2414;
+  --radius-card: 0;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full w-full m-0;
+  }
+
+  body {
+    @apply overflow-hidden bg-canvas text-[#17252b] font-sans;
+    font-variant-numeric: tabular-nums;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  input,
+  select,
+  textarea {
+    @apply border border-[#718c96] bg-[#fffde2] text-[#17252b] outline-none;
+    border-width: 2px;
+    border-style: inset;
+    border-color: #edf7fa;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #d97706 !important;
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(217 119 6 / 0.35);
+    transform: scale(1.02);
+    caret-color: #17252b;
+  }
+
+  input,
+  select,
+  textarea {
+    caret-width: 3px;
+  }
+
+  body.mandi-ui {
+    cursor: default;
+  }
+
+  body.mandi-ui button,
+  body.mandi-ui a {
+    cursor: pointer;
+  }
+
+  button {
+    @apply transition-colors duration-150 ease-in-out;
+  }
+}
+
+@layer utilities {
+  .tabular-money {
+    @apply font-mono tracking-tight tabular-nums;
+  }
+
+  .transition-premium {
+    transition: all 0.15s ease-in-out;
+  }
+}

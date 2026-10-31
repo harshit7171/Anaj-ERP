@@ -1,0 +1,283 @@
+.lifting-entry-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 100%;
+  padding: 8px 10px 12px;
+  background: #c0c0c0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.lifting-entry-title {
+  margin: 0;
+  padding: 4px 8px;
+  background: linear-gradient(#5a7ea8, #3d5a80);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lifting-entry-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lifting-entry-toolbar button {
+  min-width: 88px;
+  padding: 4px 10px;
+  border: 1px solid #666;
+  background: #dcdcdc;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lifting-entry-header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 220px;
+  gap: 10px;
+}
+
+.lifting-entry-col label {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.lifting-entry-col input {
+  padding: 2px 6px;
+  border: 1px solid #333;
+  background: #fff;
+  font: inherit;
+}
+
+.lifting-entry-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.lifting-entry-totals {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+  padding: 6px;
+  border: 1px solid #666;
+  background: #e8e8e8;
+  font-weight: 700;
+}
+
+.lifting-entry-summary-panel {
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.lifting-entry-summary-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.lifting-entry-summary-panel th,
+.lifting-entry-summary-panel td {
+  border: 1px solid #666;
+  padding: 2px 4px;
+}
+
+.lifting-entry-summary-total {
+  margin: 0;
+  padding: 4px;
+  color: #0044cc;
+  font-weight: 700;
+}
+
+.lifting-entry-grid-wrap {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.lifting-entry-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.lifting-entry-grid th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 4px;
+  border: 1px solid #333;
+  background: #404040;
+  color: #fff;
+  text-align: left;
+}
+
+.lifting-entry-grid td {
+  border: 1px solid #888;
+  padding: 0;
+}
+
+.lifting-entry-grid input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 4px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.lifting-entry-grid tr:focus-within td {
+  background: #7fd4d4;
+}
+
+.lifting-entry-status {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lifting-entry-error {
+  color: #a01818;
+}
+
+.lifting-picker {
+  position: fixed;
+  z-index: 9000;
+  top: 38%;
+  left: 32%;
+  width: min(420px, 90vw);
+  max-height: 240px;
+  overflow: auto;
+  border: 2px solid #333;
+  background: #6fd4c6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.lifting-picker-header {
+  padding: 4px 8px;
+  background: #404040;
+  color: #fff;
+  font-weight: 700;
+}
+
+.lifting-picker ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lifting-picker li button {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: #0a3d20;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lifting-picker li button:hover {
+  background: #404040;
+  color: #fff;
+}
+
+.lifting-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.lifting-expense-modal,
+.lifting-print-modal {
+  width: min(720px, 96vw);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 10px;
+  border: 2px solid #666;
+  background: #c0c0c0;
+}
+
+.lifting-expense-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.lifting-expense-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.lifting-expense-grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lifting-expense-grid th {
+  padding: 4px;
+  border: 1px solid #333;
+  background: #505050;
+  color: #fff;
+}
+
+.lifting-expense-grid td {
+  border: 1px solid #666;
+  padding: 0;
+}
+
+.lifting-expense-grid input,
+.lifting-expense-grid select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 4px;
+  border: 0;
+  font: inherit;
+}
+
+.lifting-print-modal label {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.lifting-print-range {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.lifting-print-options {
+  display: grid;
+  gap: 4px;
+  margin: 8px 0;
+}
+
+.lifting-print-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.lifting-print-progress {
+  margin-top: 8px;
+  font-weight: 700;
+}

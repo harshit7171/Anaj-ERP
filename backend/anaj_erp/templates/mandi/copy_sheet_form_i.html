@@ -1,0 +1,48 @@
+<section class="mandi-copy-sheet">
+  <div class="mandi-copy-banner">{{ copy_label_en }}<br /><span class="mandi-title-hi">{{ copy_label_hi }}</span></div>
+  <div class="mandi-title">COMMISSION AGENT INVOICE / I-FORM</div>
+  <div class="mandi-title-hi">vikraya parchi / आई-फॉर्म (कमीशन एजेंट)</div>
+  <hr class="mandi-rule" />
+  <table class="mandi-meta">
+    <tr>
+      <td><strong>Buyer / Party / पार्टी:</strong> {{ party_name }}</td>
+      <td><strong>Invoice No / बिल नं.:</strong> {{ document_number }}</td>
+    </tr>
+    <tr>
+      <td><strong>Date / दिनांक:</strong> {{ document_date }}</td>
+      <td><strong>GSTIN:</strong> {{ party_gstin }}</td>
+    </tr>
+  </table>
+  <table class="mandi-grid">
+    <thead>
+      <tr>
+        <th>Item / वस्तु</th>
+        <th>Bags</th>
+        <th>Weight (Qtl)</th>
+        <th>Rate</th>
+        <th>Taxable / राशि</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ line_rows }}
+    </tbody>
+  </table>
+  <table class="mandi-deduct">
+    <thead>
+      <tr>
+        <th>Charges / Loading-Unloading / कर</th>
+        <th class="num">Amount (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ charge_rows }}
+      <tr><td><strong>GRAND TOTAL</strong></td><td class="num"><strong>{{ net_amount }}</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="mandi-words">{{ amount_words }}</p>
+  <div class="mandi-signatures">
+    <div>Buyer / खरीददार</div>
+    <div>Mandi / मंडी</div>
+    <div>Arhtiya / आढ़तिया</div>
+  </div>
+</section>

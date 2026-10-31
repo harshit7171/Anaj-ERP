@@ -1,0 +1,60 @@
+/** Account group / parent head — drives Balance Sheet vs P&L classification. */
+export const MAIN_HEADS = [
+  "Advance to Suppliers",
+  "Bank Accounts",
+  "Branch / Divisions",
+  "Capital Account",
+  "Cash in Hand",
+  "Current Assets",
+  "Current Liabilities",
+  "Deferred Tax Liabilities / Assets",
+  "Direct Expenses",
+  "Direct Incomes",
+  "Farmer Creditors",
+  "Farmer Debtors",
+  "Fixed Assets",
+  "Indirect Expenses",
+  "Indirect Incomes",
+  "Investments",
+  "Long-Term Borrowings",
+  "Loans & Advances (Assets)",
+  "Loans (Liability)",
+  "Misc. Expenses",
+  "Non-Current Assets",
+  "Non-Current Liabilities",
+  "Other Current Liabilities",
+  "Other Long-Term Liabilities",
+  "Other Non-Current Investments",
+  "Purchase & Sales Accounts",
+  "Purchase Account",
+  "Reserves & Surplus",
+  "Salary Payable",
+  "Sales Account",
+  "Secured Loans",
+  "Securities",
+  "Share Capital",
+  "Short-Term Loans & Advances",
+  "Short-Term Provisions",
+  "Sundry Creditors",
+  "Sundry Creditors (Other)",
+  "Sundry Creditors (Traders)",
+  "Sundry Debtors",
+  "Sundry Debtors (Other)",
+  "Sundry Debtors (Stockists)",
+  "Sundry Debtors (Traders)",
+  "TDS & Advance Income Tax",
+  "Trade Payables",
+  "Trade Payables (Old)",
+  "Trade Payables (Other)",
+  "Trade Payables (Outside)",
+  "Unsecure Loan",
+  "Wages Payable",
+] as const;
+
+export const PARTY_GST_TYPES = ["Unregistered", "Registered", "Composition"] as const;
+export const AC_CATEGORIES = ["Good", "better", "Best", "Bad"] as const;
+export const OPENING_SIDES = ["Debit", "Credit"] as const;
+export const YES_NO = ["Y", "N"] as const;
+export const FARMER_ARTHIA = ["N", "A", "Y"] as const;
+export const TDS_DEDUCTEE = ["01-Companies", "02-other than Companies"] as const;
+export const LOCAL_CENTRAL = ["Local", "central", "Export"] as const;

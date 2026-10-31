@@ -1,0 +1,170 @@
+.kachi-purchase-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 100%;
+  padding: 8px 10px 12px;
+  background: #c0c0c0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.kachi-purchase-title {
+  margin: 0;
+  padding: 4px 8px;
+  background: linear-gradient(#5a7ea8, #3d5a80);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.kachi-purchase-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.kachi-purchase-toolbar button {
+  min-width: 88px;
+  padding: 4px 10px;
+  border: 1px solid #666;
+  background: #dcdcdc;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.kachi-purchase-user {
+  margin-left: auto;
+  padding: 4px 12px;
+  border: 1px solid #666;
+  background: #e8e8e8;
+  font-weight: 700;
+}
+
+.kachi-purchase-header {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr)) minmax(200px, 2fr) auto;
+  gap: 8px;
+  align-items: end;
+}
+
+.kachi-purchase-header label {
+  display: grid;
+  gap: 2px;
+  font-weight: 700;
+}
+
+.kachi-purchase-header input {
+  padding: 2px 6px;
+  border: 1px solid #333;
+  background: #fff;
+  font: inherit;
+}
+
+.kachi-purchase-buyer {
+  grid-column: span 1;
+}
+
+.kachi-purchase-totals {
+  display: grid;
+  grid-template-columns: repeat(4, 72px);
+  gap: 4px;
+}
+
+.kachi-purchase-totals span {
+  padding: 4px 6px;
+  border: 1px solid #666;
+  background: #fffacd;
+  font-weight: 700;
+  text-align: right;
+}
+
+.kachi-purchase-grid-wrap {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.kachi-purchase-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.kachi-purchase-grid th {
+  position: sticky;
+  top: 0;
+  padding: 4px;
+  border: 1px solid #333;
+  background: #404040;
+  color: #ffeb3b;
+  text-align: left;
+}
+
+.kachi-purchase-grid td {
+  border: 1px solid #888;
+  padding: 0;
+}
+
+.kachi-purchase-grid input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 4px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.kachi-purchase-grid tr:focus-within td {
+  background: #7fd4d4;
+}
+
+.kachi-purchase-status {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.kachi-purchase-error {
+  color: #a01818;
+}
+
+.kachi-picker {
+  position: fixed;
+  z-index: 9000;
+  top: 40%;
+  left: 30%;
+  width: min(380px, 90vw);
+  max-height: 220px;
+  overflow: auto;
+  border: 2px solid #333;
+  background: #6fd4c6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.kachi-picker ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kachi-picker li button {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: #0a3d20;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.kachi-picker li button:hover {
+  background: #404040;
+  color: #fff;
+}

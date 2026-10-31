@@ -1,0 +1,225 @@
+.gst-purchase-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 100%;
+  padding: 8px;
+  background: #b8c4d0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 11px;
+}
+
+.gst-purchase-title {
+  margin: 0;
+  padding: 4px 8px;
+  background: linear-gradient(#5a7ea8, #3d5a80);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gst-purchase-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.gst-purchase-toolbar button {
+  min-width: 82px;
+  padding: 3px 8px;
+  border: 1px solid #666;
+  background: #dcdcdc;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.gst-purchase-recalc {
+  background: #8fbc8f !important;
+}
+
+.gst-purchase-weekday {
+  color: #0044cc;
+  font-weight: 700;
+}
+
+.gst-purchase-user {
+  font-weight: 700;
+}
+
+.gst-purchase-header {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 8px;
+}
+
+.gst-purchase-fields {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
+  gap: 4px;
+  align-items: end;
+}
+
+.gst-purchase-fields label {
+  display: grid;
+  gap: 1px;
+  font-weight: 700;
+}
+
+.gst-purchase-fields label.wide {
+  grid-column: span 2;
+}
+
+.gst-purchase-fields input,
+.gst-purchase-fields select {
+  padding: 2px 4px;
+  border: 1px solid #333;
+  background: #fff;
+  font: inherit;
+}
+
+.gst-bill-amt {
+  background: #fffacd !important;
+  font-weight: 700;
+}
+
+.gst-purchase-side {
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.gst-purchase-side-tabs {
+  display: flex;
+}
+
+.gst-purchase-side-tabs button.rates {
+  flex: 1;
+  padding: 4px;
+  border: 0;
+  background: #6b8cce;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gst-purchase-side-tabs button.expens {
+  flex: 1;
+  padding: 4px;
+  border: 0;
+  background: #c96b6b;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gst-purchase-side-tabs button.active {
+  outline: 2px solid #000;
+}
+
+.gst-rate-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.gst-rate-table th,
+.gst-rate-table td {
+  border: 1px solid #666;
+  padding: 2px 3px;
+}
+
+.gst-rate-table th {
+  background: #505050;
+  color: #fff;
+}
+
+.gst-purchase-grid-wrap {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.gst-purchase-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.gst-purchase-grid th {
+  position: sticky;
+  top: 0;
+  padding: 3px;
+  border: 1px solid #333;
+  background: #404040;
+  color: #ffeb3b;
+  text-align: left;
+}
+
+.gst-purchase-grid td {
+  border: 1px solid #888;
+  padding: 0;
+}
+
+.gst-purchase-grid input,
+.gst-purchase-grid select {
+  width: 100%;
+  min-width: 44px;
+  box-sizing: border-box;
+  padding: 2px 3px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.gst-purchase-grid tr:focus-within td {
+  background: #7fd4d4;
+}
+
+.gst-purchase-status {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.gst-purchase-error {
+  color: #a01818;
+}
+
+.gst-picker {
+  position: fixed;
+  z-index: 9000;
+  top: 35%;
+  left: 25%;
+  width: min(380px, 90vw);
+  max-height: 220px;
+  overflow: auto;
+  border: 2px solid #333;
+  background: #6fd4c6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.gst-picker ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gst-picker li button {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: #0a3d20;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.gst-picker li button:hover {
+  background: #404040;
+  color: #fff;
+}

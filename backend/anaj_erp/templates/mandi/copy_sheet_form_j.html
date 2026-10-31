@@ -1,0 +1,53 @@
+<section class="mandi-copy-sheet">
+  <div class="mandi-copy-banner">{{ copy_label_en }}<br /><span class="mandi-title-hi">{{ copy_label_hi }}</span></div>
+  <div class="mandi-title">FARMER SALE PATTI / J-FORM</div>
+  <div class="mandi-title-hi">किसान बिक्री पर्ची / जे-फॉर्म</div>
+  <hr class="mandi-rule" />
+  <table class="mandi-meta">
+    <tr>
+      <td><strong>Mandi License / मंडी लाइसेंस:</strong> {{ mandi_license_no }}</td>
+      <td><strong>Date / दिनांक:</strong> {{ document_date }}</td>
+    </tr>
+    <tr>
+      <td colspan="2"><strong>Farmer Name / किसान का नाम:</strong> {{ farmer_name }}</td>
+    </tr>
+    <tr>
+      <td><strong>J-Form No / जे-फॉर्म नं.:</strong> {{ document_number }}</td>
+      <td><strong>Place / स्थान:</strong> {{ city }}</td>
+    </tr>
+  </table>
+  <table class="mandi-grid">
+    <thead>
+      <tr>
+        <th>Crop / फसल</th>
+        <th>Bags / बोरी</th>
+        <th>Weight (Qtl) / वजन</th>
+        <th>Rate / दर</th>
+        <th>Amount / राशि</th>
+        <th>GP No.</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ line_rows }}
+    </tbody>
+  </table>
+  <table class="mandi-deduct">
+    <thead>
+      <tr>
+        <th>Deduction / कटौती</th>
+        <th class="num">Amount (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Gross Value / सकल राशि</td><td class="num">{{ gross_amount }}</td></tr>
+      {{ deduction_rows }}
+      <tr><td><strong>NET PAYABLE / किसान को देय</strong></td><td class="num"><strong>{{ net_amount }}</strong></td></tr>
+    </tbody>
+  </table>
+  <p class="mandi-words">In words / शब्दों में: {{ amount_words }}</p>
+  <div class="mandi-signatures">
+    <div>Farmer / किसान</div>
+    <div>Mandi Clerk / मंडी लिपिक</div>
+    <div>Arhtiya / आढ़तिया</div>
+  </div>
+</section>

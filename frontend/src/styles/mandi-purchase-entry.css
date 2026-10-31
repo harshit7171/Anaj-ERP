@@ -1,0 +1,261 @@
+.mandi-purchase-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 100%;
+  padding: 8px 10px 12px;
+  background: #c0c0c0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.mandi-purchase-title {
+  margin: 0;
+  padding: 4px 8px;
+  background: linear-gradient(#5a7ea8, #3d5a80);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.mandi-purchase-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.mandi-purchase-toolbar button {
+  min-width: 88px;
+  padding: 4px 10px;
+  border: 1px solid #666;
+  background: #dcdcdc;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mandi-purchase-recalc {
+  background: #8fbc8f !important;
+}
+
+.mandi-purchase-user {
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.mandi-purchase-find-bill {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 700;
+}
+
+.mandi-purchase-header {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 10px;
+}
+
+.mandi-purchase-header-left {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 6px;
+  align-items: end;
+}
+
+.mandi-purchase-header-left label {
+  display: grid;
+  gap: 2px;
+  font-weight: 700;
+}
+
+.mandi-purchase-header-left input,
+.mandi-purchase-header-left select {
+  padding: 2px 6px;
+  border: 1px solid #333;
+  background: #fff;
+  font: inherit;
+}
+
+.mandi-purchase-weekday {
+  grid-column: span 1;
+  color: #0044cc;
+  font-weight: 700;
+}
+
+.mandi-purchase-flags {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.mandi-purchase-amount {
+  background: #fffacd !important;
+  font-weight: 700;
+}
+
+.mandi-purchase-remarks {
+  grid-column: 1 / -1;
+}
+
+.mandi-purchase-summary-panel {
+  border: 1px solid #333;
+  background: #fff;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.mandi-purchase-summary-panel table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+.mandi-purchase-summary-panel th,
+.mandi-purchase-summary-panel td {
+  border: 1px solid #666;
+  padding: 2px 4px;
+}
+
+.mandi-purchase-summary-panel th {
+  background: #505050;
+  color: #fff;
+}
+
+.mandi-purchase-tabs {
+  display: flex;
+  gap: 4px;
+}
+
+.mandi-purchase-tabs button {
+  padding: 4px 14px;
+  border: 1px solid #333;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mandi-purchase-tabs button.items {
+  background: #6b8cce;
+  color: #fff;
+}
+
+.mandi-purchase-tabs button.transport {
+  background: #c96b6b;
+  color: #fff;
+}
+
+.mandi-purchase-tabs button.bardana {
+  background: #8a9a5b;
+  color: #fff;
+}
+
+.mandi-purchase-tabs button.active {
+  outline: 2px solid #000;
+}
+
+.mandi-purchase-grid-wrap {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.mandi-purchase-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.mandi-purchase-grid th {
+  position: sticky;
+  top: 0;
+  padding: 3px;
+  border: 1px solid #333;
+  background: #404040;
+  color: #ffeb3b;
+  text-align: left;
+}
+
+.mandi-purchase-grid td {
+  border: 1px solid #888;
+  padding: 0;
+}
+
+.mandi-purchase-grid input,
+.mandi-purchase-grid select {
+  width: 100%;
+  min-width: 48px;
+  box-sizing: border-box;
+  padding: 2px 3px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.mandi-purchase-grid tr:focus-within td {
+  background: #7fd4d4;
+}
+
+.mandi-purchase-tab-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 8px;
+  padding: 10px;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.mandi-purchase-tab-panel label {
+  display: grid;
+  gap: 4px;
+  font-weight: 700;
+}
+
+.mandi-purchase-status {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.mandi-purchase-error {
+  color: #a01818;
+}
+
+.mandi-picker {
+  position: fixed;
+  z-index: 9000;
+  top: 38%;
+  left: 28%;
+  width: min(400px, 90vw);
+  max-height: 220px;
+  overflow: auto;
+  border: 2px solid #333;
+  background: #6fd4c6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.mandi-picker ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mandi-picker li button {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: #0a3d20;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mandi-picker li button:hover {
+  background: #404040;
+  color: #fff;
+}

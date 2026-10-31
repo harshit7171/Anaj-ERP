@@ -1,0 +1,259 @@
+.invoice-entry-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 100%;
+  padding: 8px;
+  background: #b8c4d0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 11px;
+}
+
+.invoice-entry-title {
+  margin: 0;
+  padding: 4px 8px;
+  background: linear-gradient(#5a7ea8, #3d5a80);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.invoice-entry-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.invoice-entry-toolbar button {
+  min-width: 72px;
+  padding: 3px 8px;
+  border: 1px solid #666;
+  background: #dcdcdc;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.invoice-entry-recalc {
+  background: #8fbc8f !important;
+}
+
+.invoice-entry-weekday {
+  color: #0044cc;
+  font-weight: 700;
+}
+
+.invoice-entry-user {
+  font-weight: 700;
+}
+
+.invoice-entry-header {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 8px;
+}
+
+.invoice-entry-fields {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  gap: 4px;
+  align-items: end;
+}
+
+.invoice-entry-fields label {
+  display: grid;
+  gap: 1px;
+  font-weight: 700;
+}
+
+.invoice-entry-fields label.wide {
+  grid-column: span 2;
+}
+
+.invoice-entry-fields label.span-row {
+  grid-column: 1 / -1;
+}
+
+.invoice-entry-fields input,
+.invoice-entry-fields select {
+  padding: 2px 4px;
+  border: 1px solid #333;
+  background: #fff;
+  font: inherit;
+}
+
+.invoice-bill-amt {
+  background: #fffacd !important;
+  font-weight: 700;
+}
+
+.invoice-roff-amt {
+  background: #d4f5d4 !important;
+  font-weight: 700;
+}
+
+.invoice-entry-side {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.invoice-rate-table,
+.invoice-side-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.invoice-rate-table th,
+.invoice-rate-table td,
+.invoice-side-grid th,
+.invoice-side-grid td {
+  border: 1px solid #666;
+  padding: 2px 3px;
+}
+
+.invoice-rate-table th,
+.invoice-side-grid th {
+  background: #505050;
+  color: #fff;
+}
+
+.invoice-side-tabs {
+  display: flex;
+}
+
+.invoice-side-tabs button {
+  flex: 1;
+  padding: 3px 2px;
+  border: 0;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.invoice-side-tabs button.rates {
+  background: #888;
+}
+
+.invoice-side-tabs button.expense {
+  background: #c96b6b;
+}
+
+.invoice-side-tabs button.bardana {
+  background: #808000;
+}
+
+.invoice-side-tabs button.ship {
+  background: #008080;
+}
+
+.invoice-side-tabs button.other {
+  background: #4169e1;
+}
+
+.invoice-side-tabs button.active {
+  outline: 2px solid #000;
+}
+
+.invoice-side-grid input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.invoice-entry-grid-wrap {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.invoice-entry-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10px;
+}
+
+.invoice-entry-grid th {
+  position: sticky;
+  top: 0;
+  padding: 3px;
+  border: 1px solid #333;
+  background: #404040;
+  color: #ffeb3b;
+  text-align: left;
+}
+
+.invoice-entry-grid td {
+  border: 1px solid #888;
+  padding: 0;
+}
+
+.invoice-entry-grid input,
+.invoice-entry-grid select {
+  width: 100%;
+  min-width: 40px;
+  box-sizing: border-box;
+  padding: 2px 3px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.invoice-entry-grid tr:focus-within td {
+  background: #7fd4d4;
+}
+
+.invoice-entry-status {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.invoice-entry-error {
+  color: #a01818;
+}
+
+.invoice-picker {
+  position: fixed;
+  z-index: 9000;
+  top: 35%;
+  left: 25%;
+  width: min(380px, 90vw);
+  max-height: 220px;
+  overflow: auto;
+  border: 2px solid #333;
+  background: #6fd4c6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.invoice-picker ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.invoice-picker li button {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: #0a3d20;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.invoice-picker li button:hover {
+  background: #404040;
+  color: #fff;
+}

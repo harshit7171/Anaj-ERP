@@ -1,0 +1,434 @@
+.legacy-form-container .legacy-form-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-height: 0;
+}
+
+.accounts-entry-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: #c0c0c0;
+  min-height: 100%;
+  font-size: 13px;
+}
+
+.accounts-entry-title {
+  font-weight: 700;
+  margin: 0;
+}
+
+.accounts-entry-toolbar {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.accounts-entry-toolbar button.danger {
+  background: #e8a090;
+}
+
+.accounts-entry-grid {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.accounts-entry-grid th,
+.accounts-entry-grid td {
+  border: 1px solid #808080;
+  padding: 2px 4px;
+}
+
+.accounts-entry-grid input {
+  width: 100%;
+  border: 1px solid #999;
+  box-sizing: border-box;
+}
+
+.picker-field {
+  background: #e0ffff;
+}
+
+.accounts-entry-status {
+  color: #006400;
+  margin: 0;
+}
+
+.accounts-entry-error {
+  color: #8b0000;
+  margin: 0;
+}
+
+.accounts-picker-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.accounts-picker-panel {
+  background: #fff;
+  border: 2px solid #808080;
+  min-width: 320px;
+  max-height: 70vh;
+  overflow: auto;
+  padding: 0.5rem;
+}
+
+.accounts-picker-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accounts-picker-panel li button {
+  width: 100%;
+  text-align: left;
+  padding: 4px 6px;
+}
+
+.voucher-entry-header,
+.tds-challan-fields,
+.bank-recon-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 0.35rem 0.75rem;
+  align-items: end;
+}
+
+.voucher-entry-header label,
+.tds-challan-fields label,
+.bank-recon-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-all {
+  grid-column: 1 / -1;
+}
+
+.voucher-weekday {
+  color: #0000cc;
+  font-size: 12px;
+}
+
+.voucher-cash-in-hand {
+  color: #cc0000;
+  align-self: center;
+}
+
+.voucher-totals {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.voucher-grid-tools {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.highlight-id {
+  background: #e0ffff;
+}
+
+.show-btn {
+  align-self: end;
+}
+
+.bank-recon-grid {
+  flex: 1;
+  min-height: 240px;
+}
+
+.find-account-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(120px, 1fr));
+  gap: 0.35rem 0.75rem;
+  align-items: end;
+}
+
+.find-account-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.find-account-grid .selected-row {
+  background: #c8f7c8;
+}
+
+.find-account-grid .numeric {
+  text-align: right;
+}
+
+.accounts-entry-toolbar.centered {
+  justify-content: center;
+}
+
+.stock-adj-header {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.depreciation-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+  flex-wrap: wrap;
+}
+
+.depreciation-preview {
+  flex: 1;
+  min-height: 280px;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #808080;
+}
+
+.depreciation-toolbar .accent-btn {
+  background: #f0c090;
+}
+
+.letter-head-layout {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.letter-head-left {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.letter-field-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.letter-head-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: stretch;
+}
+
+.letter-head-preview {
+  background: #fff;
+  border: 1px solid #808080;
+  padding: 0.5rem;
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.legacy-report-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: end;
+}
+
+.legacy-report-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+}
+
+.legacy-report-grid-wrap {
+  flex: 1;
+  min-height: 200px;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #808080;
+}
+
+.legacy-report-json {
+  max-height: 120px;
+  overflow: auto;
+  background: #fff;
+  border: 1px solid #808080;
+  font-size: 11px;
+  padding: 0.35rem;
+}
+
+.gst-report-filters {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.gst-report-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+}
+
+.gst-item-crop input {
+  min-width: 280px;
+}
+
+.gst-report-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.gst-report-actions .accent-btn {
+  background: #f0c090;
+}
+
+.gst-report-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: end;
+  margin-top: 0.35rem;
+}
+
+.gst-report-toggles label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.gst-report-toggles select {
+  width: 3rem;
+}
+
+.excel-btn {
+  background: #90c890;
+  align-self: end;
+}
+
+.gst-report-viewer {
+  margin-top: 0.5rem;
+  min-height: 220px;
+}
+
+.gst-grid-search {
+  margin-top: 0.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-width: 320px;
+}
+
+.gst-recon-summary {
+  font-size: 0.9rem;
+  margin: 0.35rem 0;
+}
+
+.gst-recon-grid tr.gst-recon-row--matched td {
+  background: #e8f5e9;
+}
+
+.gst-recon-grid tr.gst-recon-row--probable td {
+  background: #fff8e1;
+}
+
+.gst-recon-grid tr.gst-recon-row--missing td {
+  background: #ffebee;
+}
+
+.gst-recon-doc-link {
+  font-size: 0.85rem;
+  padding: 0.1rem 0.35rem;
+}
+
+.user-access-layout {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.user-access-sidebar h3 {
+  font-size: 0.85rem;
+  margin: 0.35rem 0 0.2rem;
+}
+
+.user-access-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 200px;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+.user-access-list button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.2rem 0.4rem;
+  border: none;
+  background: #f4f4f4;
+  font-size: 0.8rem;
+}
+
+.user-access-list button.is-selected {
+  background: #c8e6c9;
+}
+
+.user-access-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.user-access-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  gap: 2px;
+}
+
+.user-access-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.user-access-grid input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+
+.user-login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-login-form .primary-button {
+  margin-top: 0.35rem;
+}

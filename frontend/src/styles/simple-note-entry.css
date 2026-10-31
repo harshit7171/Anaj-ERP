@@ -1,0 +1,150 @@
+.simple-note-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 100%;
+  padding: 8px;
+  background: #c0c0c0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+}
+
+.simple-note-title {
+  margin: 0;
+  padding: 4px 8px;
+  background: linear-gradient(#5a7ea8, #3d5a80);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.simple-note-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.simple-note-toolbar button {
+  min-width: 72px;
+  padding: 4px 10px;
+  border: 1px solid #666;
+  background: #dcdcdc;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.simple-note-toolbar button.delete-btn {
+  background: #f5c89f;
+}
+
+.simple-note-header {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 6px;
+  align-items: end;
+}
+
+.simple-note-header label {
+  display: grid;
+  gap: 2px;
+  font-weight: 700;
+}
+
+.simple-note-header label.wide {
+  grid-column: span 2;
+}
+
+.simple-note-header input {
+  padding: 3px 5px;
+  border: 1px solid #333;
+  background: #fff;
+  font: inherit;
+}
+
+.simple-note-grid-wrap {
+  flex: 1;
+  overflow: auto;
+  border: 1px solid #333;
+  background: #fff;
+}
+
+.simple-note-grid {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.simple-note-grid th {
+  position: sticky;
+  top: 0;
+  padding: 4px 6px;
+  border: 1px solid #333;
+  background: #404040;
+  color: #fff;
+  text-align: left;
+}
+
+.simple-note-grid td {
+  border: 1px solid #888;
+  padding: 0;
+}
+
+.simple-note-grid input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 5px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+}
+
+.simple-note-grid tr:focus-within td {
+  background: #7fd4d4;
+}
+
+.simple-note-status {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.simple-note-error {
+  color: #a01818;
+}
+
+.simple-note-picker {
+  position: fixed;
+  z-index: 9000;
+  top: 35%;
+  left: 30%;
+  width: min(360px, 90vw);
+  max-height: 220px;
+  overflow: auto;
+  border: 2px solid #333;
+  background: #6fd4c6;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.simple-note-picker ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.simple-note-picker li button {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: #0a3d20;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.simple-note-picker li button:hover {
+  background: #404040;
+  color: #fff;
+}

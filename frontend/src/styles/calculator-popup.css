@@ -1,0 +1,178 @@
+/* Floating calculator launcher (screen bottom-right) */
+.calc-fab {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.calc-fab:hover {
+  transform: scale(1.06);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.32);
+}
+
+.calc-fab:active {
+  transform: scale(0.98);
+}
+
+.calc-fab-icon {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Draggable scientific calculator (Tools menu) */
+.calc-popup-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  pointer-events: none;
+}
+
+.calc-popup-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  padding: 0 0 10px;
+  border-radius: 10px;
+  background: #3a3a3a;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+  pointer-events: auto;
+  user-select: none;
+}
+
+.calc-popup-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 10px;
+  border-radius: 10px 10px 0 0;
+  background: #2f2f2f;
+  cursor: grab;
+  touch-action: none;
+}
+
+.calc-popup-header:active {
+  cursor: grabbing;
+}
+
+.calc-popup-clock {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.calc-popup-drag-hint {
+  font-size: 10px;
+  color: #9a9a9a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calc-popup-display {
+  min-width: 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #1e1e1e;
+  color: #f2f2f2;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calc-popup-close {
+  position: relative;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 6px;
+  background: #4a4a4a;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.calc-popup-close:hover {
+  background: #5c5c5c;
+}
+
+.calc-popup-mode {
+  margin: 4px 12px 6px;
+  color: #b8b8b8;
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calc-popup-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  padding: 0 10px;
+}
+
+.calc-popup-btn {
+  min-height: 36px;
+  border: 0;
+  border-radius: 8px;
+  background: #505050;
+  color: #f5f5f5;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.calc-popup-btn:hover {
+  background: #5e5e5e;
+}
+
+.calc-popup-btn:active {
+  background: #454545;
+}
+
+.calc-popup-btn-active {
+  background: #6a6a6a;
+  outline: 1px solid #8a8a8a;
+}
+
+.calc-btn-muted {
+  background: #454545;
+}
+
+.calc-btn-zero {
+  background: #6b6b6b;
+}
+
+.calc-btn-equals {
+  background: #0078d4;
+  color: #fff;
+}
+
+.calc-btn-equals:hover {
+  background: #1084de;
+}
